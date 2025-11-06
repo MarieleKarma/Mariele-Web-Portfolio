@@ -1,0 +1,251 @@
+body {
+  font-family: "poppins", sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: lightpink;
+  padding: 10px 40px;
+  margin: 0;
+  align-items: center;
+}
+
+.q {
+  display: flex;
+  gap: 60px;
+  list-style: none; /* Added for better styling */
+  padding: 0;
+  margin: 0;
+}
+
+.m {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 2em;
+  margin-right: auto;
+}
+
+.navbar a:hover {
+  color: lightcoral;
+}
+
+.navbar a.active {
+  color: lightcoral; /* Matches the hover color */
+}
+
+.navbar .title:hover {
+  color: white;
+}
+
+.container3 {
+  display: flex;
+  justify-content: center;
+  padding: 20px; /* Added padding for responsiveness */
+}
+
+.heaven {
+  background-color: lightpink;
+  border-radius: 20px;
+  margin-top: 130px;
+  height: auto; /* Changed from fixed to auto for responsiveness */
+  min-height: 360px; /* Minimum height to maintain structure */
+  width: auto; /* Allow flexible width */
+  max-width: 630px; /* Prevent overflow on larger screens */
+  padding: 20px;
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 40px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  text-align: justify;
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0; /* Prevent icon shrinking */
+}
+
+.link {
+  font-size: 30px;
+}
+
+/* Tablet styles (768px to 1024px) */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .q {
+    gap: 40px;
+  }
+
+  .title {
+    font-size: 1.8em;
+  }
+
+  a {
+    font-size: 18px;
+  }
+
+  .container3 {
+    padding: 15px;
+  }
+
+  .heaven {
+    margin-top: 100px;
+    padding: 15px;
+    min-height: 320px;
+    max-width: 550px;
+  }
+
+  .contact-info {
+    margin-left: 30px;
+    gap: 12px;
+  }
+
+  .info-item {
+    font-size: 26px;
+    margin-top: 15px;
+    gap: 8px;
+  }
+
+  .icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .link {
+    font-size: 26px;
+  }
+}
+
+/* Phone styles (up to 768px) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px 15px;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 1.5em;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .q {
+    gap: 20px;
+    justify-content: center;
+  }
+
+  a {
+    font-size: 16px;
+  }
+
+  .container3 {
+    padding: 10px;
+  }
+
+  .heaven {
+    margin-top: 50px; /* Reduced margin for mobile */
+    padding: 15px;
+    min-height: auto; /* Allow natural height */
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .contact-info {
+    margin-left: 0; /* Center or remove left margin */
+    gap: 10px;
+    align-items: center; /* Center items */
+  }
+
+  .info-item {
+    font-size: 20px;
+    margin-top: 10px;
+    gap: 8px;
+    flex-direction: column; /* Stack icon and text vertically on small screens */
+    text-align: center;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .link {
+    font-size: 20px;
+  }
+}
+
+/* Extra small screens (up to 480px) */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 8px 10px;
+  }
+
+  .title {
+    font-size: 1.3em;
+  }
+
+  .q {
+    gap: 15px;
+  }
+
+  a {
+    font-size: 14px;
+  }
+
+  .container3 {
+    padding: 5px;
+  }
+
+  .heaven {
+    margin-top: 30px;
+    padding: 10px;
+  }
+
+  .contact-info {
+    gap: 8px;
+  }
+
+  .info-item {
+    font-size: 16px;
+    margin-top: 8px;
+    gap: 6px;
+  }
+
+  .icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .link {
+    font-size: 16px;
+  }
+}
